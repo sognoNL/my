@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="30" id="KGk-i7-Jjw" customClass="DateCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nq-vA-8Z9">
+                        <rect key="frame" x="10" y="5" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="8Ja-jd-tOW"/>
+                            <constraint firstAttribute="width" constant="80" id="blM-CG-xp0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiN-Jw-lru">
+                        <rect key="frame" x="100" y="5" width="210" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7DR-OS-7ol"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yiN-Jw-lru" firstAttribute="leading" secondItem="8nq-vA-8Z9" secondAttribute="trailing" constant="10" id="F3u-9M-oC9"/>
+                    <constraint firstItem="8nq-vA-8Z9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ju0-eB-4UG"/>
+                    <constraint firstAttribute="trailing" secondItem="yiN-Jw-lru" secondAttribute="trailing" constant="10" id="SVq-2T-dWw"/>
+                    <constraint firstAttribute="centerY" secondItem="yiN-Jw-lru" secondAttribute="centerY" id="tcQ-Pw-ef9"/>
+                    <constraint firstAttribute="centerY" secondItem="8nq-vA-8Z9" secondAttribute="centerY" id="w3W-xC-czc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="yiN-Jw-lru" id="qw0-IV-BL3"/>
+                <outlet property="titleLabel" destination="8nq-vA-8Z9" id="F17-CN-DWa"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="148"/>
+        </tableViewCell>
+    </objects>
+</document>
