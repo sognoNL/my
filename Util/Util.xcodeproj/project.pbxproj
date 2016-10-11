@@ -109,6 +109,7 @@
 		338093CA1DAC8E2D00AB0035 /* FilePathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilePathViewController.m; sourceTree = "<group>"; };
 		338093CC1DAC8F1200AB0035 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
 		338093CD1DAC8F1200AB0035 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		338093CF1DAC99C400AB0035 /* Util.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				338093581DAC79F200AB0035 /* main.m */,
+				338093CF1DAC99C400AB0035 /* Util.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -510,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Util/Util.pch";
 				INFOPLIST_FILE = Util/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NL.Util;
@@ -521,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Util/Util.pch";
 				INFOPLIST_FILE = Util/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NL.Util;
@@ -547,6 +551,7 @@
 				3380936D1DAC79F200AB0035 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

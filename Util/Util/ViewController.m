@@ -19,9 +19,6 @@
 #import "FilePathViewController.h"
 #import "OtherViewController.h"
 
-#define UIScreenWidth               ([UIScreen mainScreen].bounds.size.width)
-#define UIScreenHeight              ([UIScreen mainScreen].bounds.size.height)
-
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     NSArray *cataAry;
@@ -40,7 +37,7 @@
     cataAry = @[@"NSDate使用",@"NSStirng.NSArray.枚举",@"绘图",@"加载更多",@"slider",@"iOS 开发中一些相关的路径",@"应用内打开系统设置界面",@"获取手机安装的应用",@"其他"];
 }
 - (void)initTableView{
-    tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, UIScreenWidth, UIScreenHeight)];
+    tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDevice_W, kDevice_H)];
     tableview.backgroundColor = [UIColor clearColor];
     tableview.scrollEnabled = NO;
     tableview.showsVerticalScrollIndicator = NO;

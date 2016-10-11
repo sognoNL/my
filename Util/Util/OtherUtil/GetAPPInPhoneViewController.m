@@ -7,8 +7,6 @@
 //
 
 #import "GetAPPInPhoneViewController.h"
-#define UIScreenWidth               ([UIScreen mainScreen].bounds.size.width)
-#define UIScreenHeight              ([UIScreen mainScreen].bounds.size.height)
 
 @interface GetAPPInPhoneViewController ()
 {
@@ -27,7 +25,7 @@
 }
 
 - (void)initTextView{
-    textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, UIScreenWidth, UIScreenHeight-64)];
+    textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, kDevice_W, kDevice_H-64)];
     [self.view addSubview:textView];
 }
 
